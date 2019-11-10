@@ -3,6 +3,7 @@ const model = tf.sequential();
 model.add(tf.layers.dense({units: 1, inputShape: [1]}));
 
 // Specify loss and optimizer for model
+// sgd = Stochastic gradient descent
 model.compile({loss: "meanSquaredError", optimizer: "sgd"});
 
 // Prepare training data
